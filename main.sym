@@ -1,0 +1,168 @@
+004-005 @READ_PROGRAM_MEMORY8.P1
+004-005 @WRITE_PROGRAM_MEMORY8.P2
+008     PSP_DATA
+015     CCP_1_LOW
+015     CCP_1
+016     CCP_1_HIGH
+01B     CCP_2_LOW
+01B     CCP_2
+01C     CCP_2_HIGH
+020     @TRIS_C
+021     MAIN.key
+022     MAIN.error2
+023     MAIN.error1
+024     MAIN.error3
+025     MAIN.error4
+026     MAIN.error5
+027     MAIN.error6
+028     keypadScan.key
+028     lcd_init.i
+028     ledcheck.@SCRATCH1
+028     @PSTRINGC7_646.@SCRATCH1
+028     MAIN.@SCRATCH1
+029-02C lcd_init.LCD_INIT_STRING
+029     keypadScan.count
+029     @PSTRINGC7_646.@SCRATCH2
+02A     keypadScan.i
+02A     @PSTRINGC7_646.@SCRATCH3
+02B     lcd_putc.c
+02B     keypadScan.i
+02B     @PSTRINGC7_646.@SCRATCH4
+02C     keypadScan.i
+02C     lcd_gotoxy.x
+02D     @delay_ms1.P1
+02D     keypadScan.i
+02D     lcd_gotoxy.y
+02D     lcd_init.@SCRATCH1
+02E     keypadScan.i
+02E     lcd_gotoxy.address
+02F     keypadScan.i
+02F     lcd_gotoxy.@SCRATCH1
+030     lcd_send_byte.address
+030     keypadScan.i
+031     keypadScan.i
+031     lcd_send_byte.n
+032     keypadScan.i
+032     lcd_read_byte.low
+032     lcd_send_byte.@SCRATCH1
+033     keypadScan.i
+033     lcd_read_byte.high
+033     lcd_send_nibble.n
+034     keypadScan.i
+034     lcd_read_nibble.n
+034     lcd_read_byte.@SCRATCH1
+035     keypadScan.i
+035     lcd_read_nibble.@SCRATCH1
+036     keypadScan.i
+037     keypadScan.i
+038     keypadScan.i
+039     keypadScan.i
+077     @SCRATCH
+078     @SCRATCH
+078     _RETURN_
+079     @SCRATCH
+07A     @SCRATCH
+09C.6   C1OUT
+09C.7   C2OUT
+10D-10E @WRITE_PROGRAM_MEMORY8.P1
+10D-10E @READ_PROGRAM_MEMORY8.P2
+
+ROM Allocation:
+000004  @const664.call
+000009  @const666.call
+00000D  @const667.call
+000013  @const668.call
+000017  @const692.call
+00001D  @const693.call
+00001E  @const694.call
+00001F  @const695.call
+000025  @const696.call
+00002B  @const697.call
+000031  @const699.call
+000034  @const700.call
+000038  @const701.call
+00003E  @const703.call
+000041  @const704.call
+000045  @const705.call
+00004B  @const707.call
+00004E  @const708.call
+000052  @const709.call
+000058  @const710.call
+000060  @const711.call
+000066  @const713.call
+000067  @const714.call
+00006A  @const715.call
+00006B  @const716.call
+00006F  @const717.call
+000075  @const719.call
+000076  @const720.call
+000079  @const721.call
+00007A  @const722.call
+00007E  @const723.call
+000084  @const725.call
+000085  @const726.call
+000088  @const727.call
+000089  @const728.call
+00008D  @const729.call
+000090  @const730.call
+000093  @const731.call
+000096  @const732.call
+000099  @const733.call
+00009C  @const734.call
+00009F  @const735.call
+0000A2  @const736.call
+0000A5  @const737.call
+0000A8  @const738.call
+0000A9  keypadinit
+0000BF  @delay_ms1
+0000D4  lcd_send_nibble
+000103  lcd_read_nibble
+000134  lcd_send_byte
+000148  lcd_read_byte
+0001AC  lcd_init
+000204  ledcheck
+00021F  lcd_gotoxy
+000231  lcd_putc
+00025D  @PSTRINGC7_646
+0002B3  lcdDisplayMenu
+0002E5  keypadScan
+0004EB  nextTheta
+000509  GoToNextX
+000523  GoToZComplement
+000800  MAIN
+000800  @cinit1
+00080C  @cinit2
+
+Project Directory:
+    C:\Users\note book\Desktop\MainboardATS2\
+
+Project Files:
+    main.c                                                  [13-Feb-24 23:35  CRC=02D07DBE]
+    ..\..\..\..\Program Files (x86)\PICC\Devices\16F877A.h  [12-Nov-13 14:35  CRC=81334808]
+    ..\..\..\..\Program Files (x86)\PICC\Drivers\lcd.c      [19-Sep-13 15:38  CRC=D1A6378A]
+    communication.h                                         [13-Feb-24 23:36  CRC=377C98B2]
+
+Source signature=C4A32EB4
+
+Units:
+    main (main)
+
+Compiler Settings:
+    Processor:      PIC16F877A
+    Pointer Size:   16
+    ADC Range:      0-65535
+    Opt Level:      9
+    Short,Int,Long: UNSIGNED: 1,8,16
+    Float,Double:   32,32
+
+Output Files:
+    XREF file:   main.xsym
+    Errors:      main.err
+    Ext Symbols: main.esym
+    INHX8:       main.hex
+    Symbols:     main.sym
+    List:        main.lst
+    Debug/COFF:  main.cof
+    Project:     main.ccspjt
+    Call Tree:   main.tre
+    Statistics:  main.STA
