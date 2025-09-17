@@ -14,6 +14,7 @@ It features:
 ---
 
 ## ⚙️ Hardware Components  
+![Alt text](images/download.png)
 - **PIC16F877A** Microcontroller  
 - **16x2 LCD Display**  
 - **4x3 Keypad Matrix**  
